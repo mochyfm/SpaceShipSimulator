@@ -54,6 +54,10 @@ public class SpaceShip {
         setxCoordenate(newPosition);
     }
 
+    public void brake() {
+        setxSpeed(getAcceleration() - getxSpeed());
+    }
+
     // Name Field
     public String getName() {
         return name;
