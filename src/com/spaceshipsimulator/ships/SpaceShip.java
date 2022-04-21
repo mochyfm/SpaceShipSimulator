@@ -31,20 +31,6 @@ public class SpaceShip {
         this.yDirection = 0.0f;
     }
 
-    public static SpaceShip createStandardSpaceShip() {
-        Scanner inputMedia = new Scanner(System.in);
-
-        System.out.print("\n" + "Helloo! " + System.getProperty("user.name") + ", tell me the name of your mega cool SpaceShip: ");
-        String userSpaceShipName = inputMedia.nextLine();
-
-        System.out.print("Thank you!, but we are not done yet. Please tell me now the License Plate for your new Space Ship:");
-        String userGalacticLicensePlate = inputMedia.nextLine();
-
-        System.out.print("Very Cool!, thank you for the information. Enjoy the drive!" + "\n");
-
-        return new SpaceShip(userSpaceShipName, userGalacticLicensePlate);
-    }
-
     public void speedUp(float accelerationValue) {
 
         float newSpeed = accelerationValue + getxSpeed();
