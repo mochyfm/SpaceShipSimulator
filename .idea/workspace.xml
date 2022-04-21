@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ccb7606-7357-43c1-9ea0-17114dd09764" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/spaceship/ship/SpaceShip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/spaceship/ship/SpaceShip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/spaceship/ship/SpaceShip.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/spaceshipsimulator/ships/SpaceShip.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
