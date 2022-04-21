@@ -45,6 +45,15 @@ public class SpaceShip {
         return new SpaceShip(userSpaceShipName, userGalacticLicensePlate);
     }
 
+    public void speedUp(float accelerationValue) {
+
+        float newSpeed = accelerationValue + getxSpeed();
+        setxSpeed(newSpeed);
+
+        float newPosition = getxSpeed() + getxCoordenate();
+        setxCoordenate(newPosition);
+    }
+
     // Name Field
     public String getName() {
         return name;
