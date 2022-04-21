@@ -25,5 +25,23 @@ public class Cargo extends SpaceShip {
         this.loadQuantity = 0;
     }
 
+    public int getCargo() {
+        return cargo;
+    }
+
+    public void setCargo(int cargo) {
+        this.cargo = cargo;
+    }
+
+    public int getLoadQuantity(){return  loadQuantity;}
+
+    @Override
+    public String toString() {
+        return "\n" + CargoShipASCII +
+                "\n Máximum Cargo Load: " + getCargo() + " - " + " (Actual Cargo: " + loadQuantity + ")" +
+                "\n Space Ship Name: " + getName() +
+                "\n Galactic License Plate: " + getGalacticLicensePlate();
+    }
+
 
 }
