@@ -45,6 +45,24 @@ public class Cargo extends SpaceShip {
         return new Cargo(userSpaceShipName, userGalacticLicensePlate, userCargo);
     }
 
+    public void load() {
+        if (loadQuantity < getCargo()) {
+            loadQuantity++;
+            System.out.println("Added Load");
+        } else {
+            System.out.println("Can't add more Cargo.");
+        }
+    }
+
+    public void unload() {
+        if (loadQuantity > 0) {
+            loadQuantity--;
+            System.out.println("Extracted Load");
+        } else {
+            System.out.println("There is no load to be Extracted");
+        }
+    }
+
     public int getCargo() {
         return cargo;
     }
