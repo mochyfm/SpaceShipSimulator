@@ -134,4 +134,11 @@ public class SpaceShip {
         this.yDirection = yDirection;
     }
 
+    @Override
+    public String toString() {
+        return "\n" + SpaceShipASCII +
+                "\n Space Ship Name: " + getName() +
+                "\n Galactic License Plate: " + getGalacticLicensePlate();
+    }
+
 }
