@@ -1,4 +1,5 @@
 package com.spaceshipsimulator.ships;
+import java.util.Scanner;
 
 public class Cargo extends SpaceShip {
 
@@ -23,6 +24,25 @@ public class Cargo extends SpaceShip {
         super(name, galacticLicensePlate);
         this.cargo = cargo;
         this.loadQuantity = 0;
+    }
+
+    public static Cargo createCargoShip() {
+        Scanner inputMedia = new Scanner(System.in);
+
+        System.out.print("\n" + "Helloo! " + System.getProperty("user.name") + ", tell me the name of your mega cool Cargo Ship: ");
+        String userSpaceShipName = inputMedia.nextLine();
+
+        System.out.print("Thank you! now please tell me now the License Plate for your the " + userSpaceShipName + ": ");
+        String userGalacticLicensePlate = inputMedia.nextLine();
+
+        System.out.println("\n" + "Those names are awesome!, Could you tell me a Maximum Inventory Value for your Cargo Ship?.");
+        System.out.print("This is the last question don't worry: ");
+        int userCargo = inputMedia.nextInt();
+        inputMedia.nextLine();
+
+        System.out.print("\n" + "Very Cool!, thank you for the information. Enjoy the drive!");
+
+        return new Cargo(userSpaceShipName, userGalacticLicensePlate, userCargo);
     }
 
     public int getCargo() {
