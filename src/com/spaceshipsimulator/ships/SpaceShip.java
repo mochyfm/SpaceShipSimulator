@@ -58,6 +58,10 @@ public class SpaceShip {
         setxSpeed(getAcceleration() - getxSpeed());
     }
 
+    public void emergencyStop() {
+        setxSpeed(0);
+    }
+
     // Name Field
     public String getName() {
         return name;
